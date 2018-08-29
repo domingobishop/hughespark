@@ -17,7 +17,7 @@
 
 <body <?php body_class(); ?>>
     <header id="head" class="head">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <a class="navbar-brand" href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>">
