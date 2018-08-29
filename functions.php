@@ -3,8 +3,11 @@
 
 include 'inc/functions-global.php';
 include 'inc/functions-admin.php';
+include 'inc/functions-promo.php';
 
 add_theme_support( 'post-thumbnails' );
+
+add_shortcode( 'promo', 'promo_area' );
 
 add_action( 'wp_enqueue_scripts', 'bc_styles' );
 add_action( 'wp_enqueue_scripts', 'bc_scripts' );
