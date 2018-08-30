@@ -20,6 +20,7 @@ get_header(); ?>
                 </div>
             </article>
         </div>
+        <?php get_template_part( 'partials/promo' ); ?>
         <div class="home-footer-banner" style="background-image: url(<?php echo get_option('footer_img'); ?>);"></div>
     </main>
 

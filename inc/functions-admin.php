@@ -21,6 +21,7 @@ function hp_settings_data() {
 
     for ( $i=1 ; $i<=3 ; $i++ ) {
         register_setting('hp_settings_group', 'promo_img_'.$i);
+        register_setting('hp_settings_group', 'promo_lbl_'.$i);
         register_setting('hp_settings_group', 'promo_txt_'.$i);
         register_setting('hp_settings_group', 'promo_url_'.$i);
     }
@@ -104,7 +105,12 @@ function hp_settings_page()
                         <td>Image size 480px x 480px</td>
                     </tr>
                     <tr valign="top">
-                        <th scope="row"><label for="promo_txt_<?php echo $i; ?>">Label</label></th>
+                        <th scope="row"><label for="promo_lbl_<?php echo $i; ?>">Label</label></th>
+                        <td><input type="text" name="promo_lbl_<?php echo $i; ?>" value="<?php echo esc_attr( get_option('promo_lbl_'.$i) ); ?>" /></td>
+                        <td></td>
+                    </tr>
+                    <tr valign="top">
+                        <th scope="row"><label for="promo_txt_<?php echo $i; ?>">Description</label></th>
                         <td><input type="text" name="promo_txt_<?php echo $i; ?>" value="<?php echo esc_attr( get_option('promo_txt_'.$i) ); ?>" /></td>
                         <td></td>
                     </tr>
