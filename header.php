@@ -20,8 +20,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <a class="navbar-brand" href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>">
-                        <?php bloginfo('name'); ?>
+                    <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" class="brand img-responsive" alt="<?php bloginfo('name'); ?>">
                     </a>
                 </div> 
                 <div class="col-md-12">
