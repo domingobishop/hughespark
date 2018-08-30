@@ -15,24 +15,36 @@ Text Domain:    blank-canvas
  */
 
 body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
+    font-family: 'Cormorant Garamond', serif;
     text-rendering: optimizeLegibility;
     color: #222;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
+    font-family: 'Allura', cursive;
     margin: 1.6em 0 1em;
+    color: #C74759;
+}
+h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
+    margin: 1.6em 0 1em;
 }
 h1 {
     font-size: 3em;
+}
+h2 {
+    font-size: 2.4em;
+}
+h3 {
+    font-size: 2em;
 }
 p {
     margin: 0 0 1.6em;
 }
 a {
-    color: #3b94d9;
+    color: #C74759;
 }
 a:hover, a:focus {
     text-decoration: underline;
@@ -50,9 +62,6 @@ ul {
  * ----------------------------------------------------------------------------
  */
 
-.entry-header h1 {
-    font-size: 2.4em;
-}
 .entry-content a {
     text-decoration: underline;
 }
