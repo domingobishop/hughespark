@@ -17,6 +17,9 @@ function hp_settings_data() {
     register_setting('hp_settings_group', 'hp_email');
 
     register_setting('hp_settings_group', 'header_img');
+    register_setting('hp_settings_group', 'slider_img_1');
+    register_setting('hp_settings_group', 'slider_img_2');
+    register_setting('hp_settings_group', 'slider_img_3');
     register_setting('hp_settings_group', 'footer_img');
 
     for ( $i=1 ; $i<=3 ; $i++ ) {
@@ -80,8 +83,18 @@ function hp_settings_page()
                 <h3>Homapage images</h3>
                 <p>Copy/paste the image URL from the Media Library. Please crop images with the focus is in the centre.</p>
                 <tr valign="top">
-                    <th scope="row"><label for="header_img">Header image</label></th>
-                    <td><input type="text" name="header_img" value="<?php echo esc_attr( get_option('header_img') ); ?>" /></td>
+                    <th scope="row"><label for="slider_img_1">Slider image 1</label></th>
+                    <td><input type="text" name="slider_img_1" value="<?php echo esc_attr( get_option('slider_img_1') ); ?>" /></td>
+                    <td>Image size 1600px x 750px</td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row"><label for="slider_img_2">Slider image 2</label></th>
+                    <td><input type="text" name="slider_img_2" value="<?php echo esc_attr( get_option('slider_img_2') ); ?>" /></td>
+                    <td>Image size 1600px x 750px</td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row"><label for="slider_img_3">Slider image 3</label></th>
+                    <td><input type="text" name="slider_img_3" value="<?php echo esc_attr( get_option('slider_img_3') ); ?>" /></td>
                     <td>Image size 1600px x 750px</td>
                 </tr>
                 <tr valign="top">
