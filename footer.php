@@ -16,7 +16,6 @@
         </p>
 	</div>
     <div class="col-md-4 text-center heart">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/heart.png" class="img-responsive">
     </div>
 	<div class="col-md-4 text-right bb-logo">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/bb-logo.png" class="pull-right img-responsive">
